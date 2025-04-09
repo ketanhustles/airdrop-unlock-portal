@@ -4,8 +4,6 @@ import { createConfig, http } from 'wagmi';
 import { mainnet } from 'wagmi/chains';
 import { WagmiProvider } from 'wagmi';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { connectorsForWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
-import { metaMaskWallet } from '@rainbow-me/rainbowkit/wallets';
 
 const config = createConfig({
   chains: [mainnet],

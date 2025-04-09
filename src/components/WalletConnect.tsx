@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import { useConnect, useAccount, useDisconnect } from 'wagmi';
-import { metaMaskWallet, injectedWallet } from 'wagmi/connectors';
+import { injected } from 'wagmi/connectors';
 import { useWalletContext } from '../providers/WalletProvider';
 import { toast } from '@/hooks/use-toast';
 
@@ -17,7 +17,7 @@ const WalletConnect: React.FC = () => {
     setIsConnecting(true);
     try {
       connect({
-        connector: metaMaskWallet(),
+        connector: injected(),
       });
     } catch (error) {
       console.error('Connection error:', error);
