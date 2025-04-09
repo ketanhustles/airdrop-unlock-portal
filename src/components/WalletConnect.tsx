@@ -4,6 +4,7 @@ import { useConnect, useAccount, useDisconnect } from 'wagmi';
 import { injected } from 'wagmi/connectors';
 import { useWalletContext } from '../providers/WalletProvider';
 import { toast } from '@/hooks/use-toast';
+import { Wallet } from 'lucide-react';
 
 const WalletConnect: React.FC = () => {
   const { connectedAddresses, addAddress, isAddressConnected } = useWalletContext();
@@ -66,7 +67,7 @@ const WalletConnect: React.FC = () => {
     <button
       onClick={handleConnect}
       disabled={isConnecting}
-      className="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-xl font-bold text-lg shadow-lg transform hover:scale-105 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed"
+      className="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 text-white rounded-xl font-bold text-lg shadow-lg transform hover:scale-105 transition-all duration-200 disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2"
     >
       {isConnecting ? (
         <span className="flex items-center justify-center">
@@ -77,7 +78,10 @@ const WalletConnect: React.FC = () => {
           Connecting...
         </span>
       ) : (
-        "Connect Wallet"
+        <>
+          <Wallet className="w-5 h-5" />
+          Connect Wallet
+        </>
       )}
     </button>
   );
