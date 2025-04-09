@@ -14,10 +14,12 @@ const Index = () => {
       {/* Logo Area */}
       <div className="absolute top-6 left-6 md:top-10 md:left-10">
         <div className="bg-white/10 backdrop-blur-md p-3 rounded-xl">
-          {/* Placeholder for company logo */}
-          <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-tr from-purple-500 to-indigo-600 flex items-center justify-center">
-            <span className="text-xl md:text-2xl font-bold text-white">A</span>
-          </div>
+          {/* TenEx logo */}
+          <img 
+            src="/lovable-uploads/ec51e852-58e0-4dee-9cf1-c6f26cca2294.png" 
+            alt="TenEx Logo" 
+            className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          />
         </div>
       </div>
 
