@@ -23,9 +23,9 @@ const Index = () => {
 
       <div className="max-w-3xl w-full mx-auto text-center mb-12 animate-fadeIn">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-          You've Unlocked Access to an 
+          You've Unlocked Access to 
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-300 ml-2">
-            Exclusive Airdrop!
+            TenEx Airdrop!
           </span>
         </h1>
         
